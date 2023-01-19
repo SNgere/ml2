@@ -28,7 +28,7 @@ def main():
     # front end elements of the web page 
     html_temp = """ 
     <div style ="background-color:blue;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Diabetes Screening Test</h1> 
+    <h1 style ="color:white;text-align:center;">Diabetes Screening Test</h1> 
     </div> 
     """
       
