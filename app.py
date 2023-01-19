@@ -36,14 +36,14 @@ def main():
     st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction
-    Pregnancies = st.number_input("Pregnancies", value = 5)
+    Pregnancies = st.number_input("Pregnancies", value = 0)
     Glucose = st.number_input("Glucose")
-    BloodPressure = st.number_input("BloodPressure")
+    BloodPressure = st.number_input("BloodPressure", value = 0)
     SkinThickness = st.number_input("SkinThickness")
     Insulin = st.number_input("Insulin")
     BMI = st.number_input("BMI")
     DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
-    Age = st.number_input("Age")
+    Age = st.number_input("Age", value = 0)
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
