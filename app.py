@@ -19,7 +19,7 @@ def prediction(Gender,Age,Urea,Cr,HbA1c,Chol,TG,HDL,LDL,VLDL,BMI):
  
     # Making predictions 
     prediction = predictor.predict( 
-        [[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
+        [[Gender,Age,Urea,Cr,HbA1c,Chol,TG,HDL,LDL,VLDL,BMI]])
      
     if prediction == 0:
         pred = 'Non-Diabetic'
