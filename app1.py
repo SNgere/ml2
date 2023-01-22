@@ -4,13 +4,13 @@ import pickle
 import streamlit as st
  
 # loading the trained model
-pickle_in = open('predictor.pkl', 'rb') 
+pickle_in = open('model.pkl', 'rb') 
 predictor = pickle.load(pickle_in)
  
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
+def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age):   
  
     # Making predictions 
     prediction = predictor.predict( 
