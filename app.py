@@ -23,8 +23,6 @@ def prediction(Gender,Age,Urea,Cr,HbA1c,Chol,TG,HDL,LDL,VLDL,BMI):
      
     if prediction == 0:
         pred = 'Non-Diabetic'
-    elif prediction == 1:
-        pred = 'Predict-Diabetic'
     else:
         pred = 'Diabetic'
     return pred
