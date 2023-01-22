@@ -50,7 +50,7 @@ def main():
     HbA1c = st.number_input("Hemoglobin A1c measure")
     Chol = st.number_input("Cholesterol")
     TG = st.number_input("Triglyceride level")
-    HDL = st.nuHDLmber_input("HDL Cholesterol level")
+    HDL = st.number_input("HDL Cholesterol level")
     LDL = st.number_input("LDL cholesterol level")
     VLDL = st.number_input("VLDL cholesterol level")
     BMI = st.number_input("BMI")
