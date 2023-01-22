@@ -10,7 +10,7 @@ predictor = pickle.load(pickle_in)
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):   
+def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age):   
  
     # Making predictions 
     prediction = predictor.predict( 
