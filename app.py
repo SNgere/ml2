@@ -46,7 +46,7 @@ def main():
     Gender = st.selectbox('Gender',("Male","Female"))
     Age = st.number_input("Age", value = 0)
     Urea = st.number_input("Urea")
-    Cr = st.number_input("Creatinine ratio")
+    Cr = st.number_input("Creatinine ratio", value = 0)
     HbA1c = st.number_input("Hemoglobin A1c measure")
     Chol = st.number_input("Cholesterol")
     TG = st.number_input("Triglyceride level")
