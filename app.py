@@ -10,14 +10,21 @@ predictor = pickle.load(pickle_in)
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age):   
+def prediction(Gender,Age,Urea,Cr,HbA1c,Chol,TG,HDL,LDL,VLDL,BMI):
+     # Pre-processing user input    
+    if Gender == "Male":
+        Gender = 1
+    else:
+        Gender = 0
  
     # Making predictions 
     prediction = predictor.predict( 
         [[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
      
     if prediction == 0:
-        pred = 'Not Diabetic'
+        pred = 'Non-Diabetic'
+    elif prediction == 1:
+        pred = 'Predict-Diabetic'
     else:
         pred = 'Diabetic'
     return pred
@@ -36,20 +43,25 @@ def main():
     st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction
-    Pregnancies = st.number_input("Pregnancies", step = 1)
-    Glucose = st.number_input("Glucose")
-    BloodPressure = st.number_input("BloodPressure", value = 0)
-    SkinThickness = st.number_input("SkinThickness")
-    Insulin = st.number_input("Insulin")
-    BMI = st.number_input("BMI")
-    DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
+    Gender = st.selectbox('Gender',("Male","Female"))
     Age = st.number_input("Age", value = 0)
+    Urea = st.number_input("Urea")
+    Cr = st.number_input("Creatinine ratio")
+    HbA1c = st.number_input("Hemoglobin A1c measure")
+    Chol = st.number_input("Cholesterol")
+    TG = st.number_input("Triglyceride level")
+    HDL = st.nuHDLmber_input("HDL Cholesterol level")
+    LDL = st.number_input("LDL cholesterol level")
+    VLDL = st.number_input("VLDL cholesterol level")
+    BMI = st.number_input("BMI")
+    
+    
     result =""
       
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
-        result = prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age) 
-        st.success('Your diagnosis is {}'.format(result))
+        result = prediction(Gender,Age,Urea,Cr,HbA1c,Chol,TG,HDL,LDL,VLDL,BMI) 
+        st.success('Patient diagnosis is {}'.format(result))
              
 if __name__=='__main__': 
     main()
