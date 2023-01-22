@@ -52,7 +52,7 @@ def main():
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
         result = prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age) 
-        st.success('Your diagnosis is {}'.format(result))
+        st.success('Patient diagnosis is {}'.format(result))
              
 if __name__=='__main__': 
     main()
