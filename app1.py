@@ -37,28 +37,17 @@ def main():
       
     # following lines create boxes in which user can enter data required to make prediction
     
-    Gender = st.selectbox('Gender',("Male","Female"))
-    
-    if Gender == Female:    
-       Pregnancies = st.number_input("Pregnancies")
-       Glucose = st.number_input("Glucose")
-       BloodPressure = st.number_input("BloodPressure")
-       SkinThickness = st.number_input("SkinThickness")
-       Insulin = st.number_input("Insulin")
-       BMI = st.number_input("BMI")
-       DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
-       Age = st.number_input("Age")
-       result =""
-    else:
-        Glucose = st.number_input("Glucose")
-        BloodPressure = st.number_input("BloodPressure")
-        SkinThickness = st.number_input("SkinThickness")
-        Insulin = st.number_input("Insulin")
-        BMI = st.number_input("BMI")
-        DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
-        Age = st.number_input("Age")
-        result =""
-        
+      
+    Pregnancies = st.number_input("Pregnancies")
+    Glucose = st.number_input("Glucose")
+    BloodPressure = st.number_input("BloodPressure")
+    SkinThickness = st.number_input("SkinThickness")
+    Insulin = st.number_input("Insulin")
+    BMI = st.number_input("BMI")
+    DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
+    Age = st.number_input("Age")
+    result =""
+   
       
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
