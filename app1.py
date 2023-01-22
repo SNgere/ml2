@@ -49,7 +49,7 @@ def main():
        DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction")
        Age = st.number_input("Age")
        result =""
-     else:
+    else:
         Glucose = st.number_input("Glucose")
         BloodPressure = st.number_input("BloodPressure")
         SkinThickness = st.number_input("SkinThickness")
