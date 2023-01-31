@@ -27,9 +27,34 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     html_temp = """ 
-    <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Streamlit diabetes diagnosis ML App</h1> 
-    </div> 
+    <div class="description">
+            <p class="title">Diabetes Checker</p>
+
+            <div class="parent">
+                <div class="character">
+                    <img src="/character_1.png" alt="" id="character1" width="520px"
+                    height="500px">
+                </div>
+
+                <div class="description1">
+                    <p>
+                        Get to evaluate your health your health based on personal medical history and 
+                        factors and seek immediate medical care.
+                    </p>
+
+                    <p>Complete the form below to get your results:</p>
+                    <a href="">
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/eoabunbr.json"
+                            trigger="loop"
+                            style="width:70px;height:70px">
+                        </lord-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     """
       
     # display the front end aspect
