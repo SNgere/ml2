@@ -29,6 +29,21 @@ def main():
     # front end elements of the web page 
     
     html_temp = "<p>Diabetes Checker</p>"
+                 "<p>
+                        Get to evaluate your health your health based on personal medical history & 
+                        factors & seek immediate medical care.
+                    </p>"
+
+                    <p>Complete the form below to get your results:</p>
+                    <a href="">
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/eoabunbr.json"
+                            trigger="loop"
+                            style="width:70px;height:70px">
+                        </lord-icon>
+                    </a>
+    "
 
           
     # display the front end aspect
