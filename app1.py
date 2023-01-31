@@ -44,7 +44,7 @@ def main():
 
             <div class="parent">
                 <div class="character">
-                    <img src="/character_1.png" alt="" id="character1" width="520px"
+                    <img src="https://github.com/SNgere/ml2/blob/8721fb744950a170edc2f86cbf51187feee2784b/character_1.png" alt="" id="character1" width="520px"
                     height="500px">
                 </div>
 
