@@ -27,9 +27,8 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
-    import streamlit as st
-
-    html_string = "<h3>this is an html string</h3>"
+    
+    html_temp = "<h3>this is an html string</h3>"
 
     st.markdown(html_string, unsafe_allow_html=True)
       
