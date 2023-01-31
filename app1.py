@@ -30,9 +30,19 @@ def main():
     
     html_temp = """ 
     <div style ="padding:15px;"> 
-    <h1 style ="color:white;text-align:center; font-size:25px; text-transform:capitalize;">Diabetes Screening</h1>
+    <h1 style ="color:white;text-align:center; font-size:28px;">Diabetes Screening</h1>
     <p>Get to evaluate your health your health based on personal medical history and factors and seek immediate medical care.</p>
-    </div> 
+    
+    <p>Complete the form below to get your results:</p>
+                    <a href="">
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/eoabunbr.json"
+                            trigger="loop"
+                            style="width:70px;height:70px">
+                        </lord-icon>
+                    </a>
+    </div>
     """
 
           
