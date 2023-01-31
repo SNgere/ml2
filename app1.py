@@ -28,8 +28,8 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     html_temp = """ 
-    <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Streamlit diabetes diagnosis ML App</h1> 
+    <div style ="background-color:blue;padding:13px"> 
+    <h1 style ="color:black;text-align:center;">Diabetes diagnosis ML App</h1> 
     </div> 
     """
           
