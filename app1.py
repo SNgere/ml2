@@ -27,7 +27,7 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
-    components.html("""
+    html_temp = components.html("""
     <!DOCTYPE html>
 <html lang="en">
 <head>
