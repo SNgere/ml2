@@ -2,6 +2,7 @@
  
 import pickle
 import streamlit as st
+import streamlit.components.v1 as components
  
 # loading the trained model
 pickle_in = open('model.pkl', 'rb') 
