@@ -69,7 +69,7 @@ def main():
 
           
     # display the front end aspect
-    st.markdown(html_temp, unsafe_allow_html = True) 
+    # st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction
     Pregnancies = st.number_input("Pregnancies")
