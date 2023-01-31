@@ -28,7 +28,7 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     
-    html_temp = "<p>Diabetes Checker</p>"
+    html_temp = """"<p>Diabetes Checker</p>"
                  "<p>
                         Get to evaluate your health your health based on personal medical history & 
                         factors & seek immediate medical care.
@@ -42,8 +42,7 @@ def main():
                             trigger="loop"
                             style="width:70px;height:70px">
                         </lord-icon>
-                    </a>
-    "
+                    </a> """
 
           
     # display the front end aspect
