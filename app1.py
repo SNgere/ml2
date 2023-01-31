@@ -27,42 +27,11 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
-    html_temp = components.html("""
-    <!DOCTYPE html>
+   import streamlit as st
 
-        <div class="description">
-            <p class="title">Diabetes Checker</p>
+   html_string = "<h3>this is an html string</h3>"
 
-            <div class="parent">
-                <div class="character">
-                    <img src="/character_1.png" alt="" id="character1" width="520px"
-                    height="500px">
-                </div>
-
-                <div class="description1">
-                    <p>
-                        Get to evaluate your health your health based on personal medical history and 
-                        factors and seek immediate medical care.
-                    </p>
-
-                    <p>Complete the form below to get your results:</p>
-                    <a href="">
-                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/eoabunbr.json"
-                            trigger="loop"
-                            style="width:70px;height:70px">
-                        </lord-icon>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-
-        </div>
-
-    """)
+   st.markdown(html_string, unsafe_allow_html=True)
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
