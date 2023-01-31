@@ -55,14 +55,7 @@ def main():
                     </p>
 
                     <p>Complete the form below to get your results:</p>
-                    <a href="">
-                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/eoabunbr.json"
-                            trigger="loop"
-                            style="width:70px;height:70px">
-                        </lord-icon>
-                    </a>
+                   <img src="https://raw.githubusercontent.com/SNgere/ml2/main/428-injection-lineal.gif">
                 </div>
             </div>
         </div>
