@@ -28,7 +28,8 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     
-    html_temp = "<h3>this is an html string</h3>"
+    html_temp = "<img src="/character_1.png" alt="" id="character1" width="520px"
+                    height="500px">"
 
           
     # display the front end aspect
