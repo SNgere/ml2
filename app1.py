@@ -30,8 +30,7 @@ def main():
     
     html_temp = "<h3>this is an html string</h3>"
 
-    st.markdown(html_temp, unsafe_allow_html=True)
-      
+          
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
       
