@@ -29,8 +29,9 @@ def main():
     # front end elements of the web page 
     
     html_temp = """ 
-    <div style ="padding:10px"> 
-    <h1 style ="color:white;text-align:center; font-size:12px;">Diabetes Screening Test</h1> 
+    <div style ="padding:2rem"> 
+    <h1 style ="color:white;text-align:center; font-size:12px;">Diabetes Screening</h1>
+    <p>Get to evaluate your health your health based on personal medical history and factors and seek immediate medical care.</p>
     </div> 
     """
 
