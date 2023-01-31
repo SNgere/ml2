@@ -27,14 +27,14 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
-   import streamlit as st
+    import streamlit as st
 
-   html_string = "<h3>this is an html string</h3>"
+    html_string = "<h3>this is an html string</h3>"
 
-   st.markdown(html_string, unsafe_allow_html=True)
+    st.markdown(html_string, unsafe_allow_html=True)
       
     # display the front end aspect
-   st.markdown(html_temp, unsafe_allow_html = True) 
+    st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction
     Pregnancies = st.number_input("Pregnancies")
