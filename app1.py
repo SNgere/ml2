@@ -33,7 +33,7 @@ def main():
     </div> 
     """
           
-    display the front end aspect
+    #display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
       
     # following lines create boxes in which user can enter data required to make prediction
