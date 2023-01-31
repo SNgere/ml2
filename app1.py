@@ -28,41 +28,15 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     
-    components.html(
-     """
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    path_to_html = "https://github.com/SNgere/ml2/blob/49f9d5d9d76e2cfef4f0a565a314b1533163699a/index.html" 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-     <div class="description">
-            <p class="title">Diabetes Checker</p>
+    # Read file and keep in variable
+    with open(path_to_html,'r') as f: 
+       html_data = f.read()
 
-            <div class="parent">
-                <div class="character">
-                    <img src="https://github.com/SNgere/ml2/blob/8721fb744950a170edc2f86cbf51187feee2784b/character_1.png?raw=true" alt="" id="character1" width="520px"
-                    height="500px">
-                </div>
-
-                <div class="description1">
-                    <p>
-                        Get to evaluate your health your health based on personal medical history and 
-                        factors and seek immediate medical care.
-                    </p>
-
-                    <p>Complete the form below to get your results:</p>
-                   <img src="https://raw.githubusercontent.com/SNgere/ml2/main/428-injection-lineal.gif">
-                </div>
-            </div>
-        </div>
-     
-    """
-    
-)
+    ## Show in webpage
+    st.header("Show an external HTML")
+    st.components.v1.html(html_data,height=200)
 
           
     # display the front end aspect
