@@ -26,7 +26,7 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 # this is the main function in which we define our webpage  
 def main():       
     # front end elements of the web page 
-    html_temp = """ 
+    components.html("""
     <div class="description">
             <p class="title">Diabetes Checker</p>
 
@@ -55,7 +55,7 @@ def main():
             </div>
         </div>
 
-    """
+    """)
       
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
