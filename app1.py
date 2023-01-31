@@ -28,7 +28,7 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     
-    html_temp = "<p class="title1">Diabetes Checker</p>"
+    html_temp = "<p>Diabetes Checker</p>"
 
           
     # display the front end aspect
