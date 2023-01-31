@@ -28,16 +28,6 @@ def prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,Diabe
 def main():       
     # front end elements of the web page 
     
-    path_to_html = "https://github.com/SNgere/ml2/blob/49f9d5d9d76e2cfef4f0a565a314b1533163699a/index.html" 
-
-    # Read file and keep in variable
-    with open(path_to_html,'r') as f: 
-       html_data = f.read()
-
-    ## Show in webpage
-    st.header("Show an external HTML")
-    st.components.v1.html(html_data,height=200)
-
           
     # display the front end aspect
     # st.markdown(html_temp, unsafe_allow_html = True) 
